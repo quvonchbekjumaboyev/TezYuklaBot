@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tezyuklabot
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        value: 7710687157
+      - key: CHANNEL_USERNAME
+        value: TezYuklaUzBot
